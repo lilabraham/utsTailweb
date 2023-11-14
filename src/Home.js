@@ -37,7 +37,7 @@ export default function Example() {
   ];
 
   return (
-    <div className="bg-white flex flex-col h-screen justify-between">
+    <div className="bg-white flex flex-col main-h-screen justify-between">
       <header className="absolute inset-x-0 top-0 z-50">
         <Navbars />
       </header>

@@ -1,8 +1,15 @@
-import { useState } from "react";
-import { Dialog } from "@headlessui/react";
+import { useState, Fragment } from "react";
+import { Dialog, Menu, Transition } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 
 const navigation = [
+  { name: 'Features', href: '/Features' },
+  { name: 'Product', href: '/Product' },
+  { name: 'Product List', href: '/ProductList' },
+];
+
+const userNavigation = [
+  { name: 'Profile', href: '/profile' },
   { name: 'Features', href: '/Features' },
   { name: 'Product', href: '/Product' },
   { name: 'Product List', href: '/ProductList' },
@@ -31,15 +38,6 @@ export default function Example() {
               />
             </a>
           </div>
-          <div className="flex lg:hidden items-center">
-            <button
-              type="button"
-              className="text-white focus:outline-none"
-              onClick={() => setMobileMenuOpen(true)}
-            >
-              <Bars3Icon className="h-8 w-8" aria-hidden="true" />
-            </button>
-          </div>
           <div className="hidden lg:flex lg:gap-x-12">
             {navigation.map((item) => (
               <a
@@ -58,15 +56,47 @@ export default function Example() {
               className="text-sm font-semibold leading-6 text-white mr-4 flex items-center"
             >
               Log in
-              </a>
-              <a href="/Home">
-              <img
-                src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
-                alt="User"
-                className="rounded-full w-6 h-6 m-2"
-              />
             </a>
           </div>
+          <Menu as="div" className="relative ml-3">
+            <div>
+              <Menu.Button className="relative flex max-w-xs items-center rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
+                <span className="absolute -inset-1.5" />
+                <span className="sr-only">Open user menu</span>
+                <img
+                  className="h-8 w-8 rounded-full"
+                  src="https://images.unsplash.com/photo-1491528323818-fdd1faba62cc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80"
+                  alt=""
+                />
+              </Menu.Button>
+            </div>
+            <Transition
+              as={Fragment}
+              enter="transition ease-out duration-100"
+              enterFrom="transform opacity-0 scale-95"
+              enterTo="transform opacity-100 scale-100"
+              leave="transition ease-in duration-75"
+              leaveFrom="transform opacity-100 scale-100"
+              leaveTo="transform opacity-0 scale-95"
+            >
+              <Menu.Items className="absolute right-0 z-10 mt-2 w-48 origin-top-right rounded-md bg-white py-1 shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none">
+                {userNavigation.map((item) => (
+                  <Menu.Item key={item.name}>
+                    {({ active }) => (
+                      <a
+                        href={item.href}
+                        className={`block px-4 py-2 text-sm ${
+                          active ? 'bg-gray-100' : ''
+                        } text-gray-700 hover:text-gray-600`}
+                      >
+                        {item.name}
+                      </a>
+                    )}
+                  </Menu.Item>
+                ))}
+              </Menu.Items>
+            </Transition>
+          </Menu>
         </nav>
         <Dialog
           open={mobileMenuOpen}
