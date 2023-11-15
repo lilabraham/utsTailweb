@@ -37,14 +37,14 @@ export default function Example() {
   ];
 
   return (
-    <div className="bg-white flex flex-col main-h-screen justify-between">
+    <div className="bg-gray-200 flex flex-col main-h-screen justify-between">
       <header className="absolute inset-x-0 top-0 z-50">
         <Navbars />
       </header>
       <div
         style={{
           backgroundImage:
-            'url("https://img.freepik.com/free-photo/full-shot-woman-looking-clothes_23-2150082870.jpg?w=1800&t=st=1699951451~exp=1699952051~hmac=a19b4324a789ab3889cb316d4d890aba7739aa2e2e7b17abb82ba56429112f8d")',
+            'url("https://img.freepik.com/free-photo/fast-fashion-concept-with-woman-clothing-store_23-2150871138.jpg?t=st=1700023543~exp=1700027143~hmac=048b5806af1af0abefb58034ec767b666a24081241a2c92c26d6f4554d8d4983&w=1800")',
           backgroundSize: "cover",
           backgroundPosition: "center",
           height: "100vh",
@@ -66,7 +66,7 @@ export default function Example() {
           />
         </div>
         <div className="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
-          <div className="hidden sm:mb-8 sm:flex sm:justify-center">
+          <div className="pt-60 hidden sm:mb-8 sm:flex sm:justify-center">
             <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-white ring-1 ring-gray-900/10 hover:ring-gray-900/20">
               Announcing our next round of funding.{" "}
               <a href="/Features" className="font-semibold text-indigo-600">
@@ -76,7 +76,7 @@ export default function Example() {
             </div>
           </div>
           <div className="text-center">
-            <h1 className="text-4xl font-style: italic tracking-tight text-white sm:text-6xl">
+            <h1 className="text-4xl font-style: italic font-bold tracking-tight text-emerald-50 sm:text-6xl">
               Masterpiece Simple and Made better
             </h1>
             <p className="mt-6 text-lg leading-8 text-white">
