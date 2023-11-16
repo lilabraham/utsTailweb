@@ -11,7 +11,7 @@ const products = [
       "https://img.freepik.com/free-psd/mens-short-sleeve-t-shirt-mockups-03_126278-124.jpg?w=1060&t=st=1699954231~exp=1699954831~hmac=c1518c074de726b9b851c5c5f0bec7d6c66acc17e9369dab80e154d11fefde2d",
     imageAlt: "Front of men's Basic Tee in black.",
     price: "$35",
-    color: "Black",
+    color: "Pink",
   },
   {
     id: 2,
@@ -21,7 +21,7 @@ const products = [
       "https://img.freepik.com/free-psd/mens-cvc-crew-mockup-05_126278-112.jpg?w=1060&t=st=1699954273~exp=1699954873~hmac=b8e073d2b461f73ef036027f9c77d90d17ddebcaa732441d99f7872c87127cb4",
     imageAlt: "Front of men's Casual Shirt in blue.",
     price: "$45",
-    color: "Blue",
+    color: "Charcoal",
   },
   {
     id: 3,
@@ -31,7 +31,7 @@ const products = [
       "https://img.freepik.com/free-psd/mens-short-sleeve-t-shirt-mockups-04_126278-125.jpg?w=1060&t=st=1699954210~exp=1699954810~hmac=c4a6379e59b97def369a919dfd47994fe5bc6073bd3918d8613a9480b1eae82c",
     imageAlt: "Front of men's Slim Fit Jeans in black.",
     price: "$55",
-    color: "Black",
+    color: "Orange",
   },
   {
     id: 4,
@@ -41,7 +41,7 @@ const products = [
       "https://img.freepik.com/free-psd/mens-ultra-cotton-tee-mockup_126278-149.jpg?w=1060&t=st=1699954184~exp=1699954784~hmac=a6f922d6b81c2d0a3c46a12a889c6ef18b86765ec745e4e33a5e718f87c2e641",
     imageAlt: "Front of men's Slim Fit Jeans in black.",
     price: "$55",
-    color: "Purple",
+    color: "cream",
   },
   {
     id: 5,
@@ -51,7 +51,7 @@ const products = [
       "https://img.freepik.com/free-psd/mens-short-sleeve-t-shirt-mockups_126278-122.jpg?w=1060&t=st=1699954143~exp=1699954743~hmac=6f1484a46d9c7a67c16e5f3a403071c1106790a26238df8fc609db2f4b3eaeb6",
     imageAlt: "Front of men's Slim Fit Jeans in black.",
     price: "$55",
-    color: "Purple",
+    color: "Navy",
   },
 ];
 
