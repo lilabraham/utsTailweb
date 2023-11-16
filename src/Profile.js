@@ -63,28 +63,28 @@ function ProfilePage() {
               className="bg-blue-500 text-white rounded-md p-2 mt-4"
               onClick={handleSaveClick}
             >
-              Simpan
+              Save
             </button>
           ) : (
             <button
               className="bg-blue-500 text-white rounded-md p-2 mt-4"
               onClick={handleEditClick}
             >
-              Edit Profil
+              Edit Profile{" "}
             </button>
           )}
           <div className="mt-4">
-            <h2 className="text-md md:text-lg font-semibold">Tentang Saya</h2>
+            <h2 className="text-md md:text-lg font-semibold">About Me</h2>
             <p className="mt-2">
-              Halo, saya adalah seorang mahasiswa yang mengejar pendidikan yang
-              semakin sulit.
+              Hello, I am a college student pursuing an increasingly difficult
+              education.
             </p>
           </div>
           <div className="mt-4">
-            <h2 className="text-md md:text-lg font-semibold">Kontak</h2>
+            <h2 className="text-md md:text-lg font-semibold">Contact</h2>
             <ul className="mt-2">
               <li>Email: manaqibaliqro@gmail.com</li>
-              <li>Telepon: +62 89501181894</li>
+              <li>Telephone: +62 89501181894</li>
             </ul>
           </div>
         </div>
