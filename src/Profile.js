@@ -19,7 +19,7 @@ function ProfilePage() {
     <div
       style={{
         backgroundImage:
-          'url("https://img.freepik.com/free-photo/showroom-employee-helping-senior-woman-choosing-bag-shopping-casual-wear-modern-boutique-elderly-customer-buying-fashionable-merchandise-trendy-accessories-fashion-concept_482257-63120.jpg?w=1800&t=st=1699943349~exp=1699943949~hmac=df57b15b2e610d43073e14ffb5679327789a4681a34fdf9084165c9ed652c2a0")',
+          'url("https://img.freepik.com/free-photo/fast-fashion-concept-with-pile-clothing_23-2150871341.jpg?t=st=1700143716~exp=1700147316~hmac=5d15ec6d653ee6a7ae7edf22e38f4280c0247428ce45ed3eb902ff09cc609c4c&w=1800")',
         backgroundSize: "cover",
         backgroundPosition: "center",
       }}
