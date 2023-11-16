@@ -26,8 +26,8 @@ function ProfilePage() {
       className="min-h-screen flex flex-col"
     >
       <Navbars />
-      <div className="flex flex-col items-center p-4 md:p-8 lg:p-16 xl:p-24 flex-1">
-        <div className="bg-white p-4 shadow-md rounded-lg w-full md:w-3/4 lg:w-1/2 xl:w-1/3">
+      <div class="flex items-center justify-center h-screen">
+        <div class="bg-white p-4 shadow-md rounded-lg w-full md:w-3/4 lg:w-1/2 xl:w-1/3">
           <div className="text-center">
             <img
               src="https://images.unsplash.com/photo-1699694927472-46a4fcf68973?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -51,7 +51,9 @@ function ProfilePage() {
               </div>
             ) : (
               <div>
-                <h1 className="text-lg md:text-2xl font-semibold mt-4">{name}</h1>
+                <h1 className="text-lg md:text-2xl font-semibold mt-4">
+                  {name}
+                </h1>
                 <p className="text-gray-500 text-sm md:text-base">{jobTitle}</p>
               </div>
             )}
@@ -74,7 +76,8 @@ function ProfilePage() {
           <div className="mt-4">
             <h2 className="text-md md:text-lg font-semibold">Tentang Saya</h2>
             <p className="mt-2">
-              Halo, saya adalah seorang mahasiswa yang mengejar pendidikan yang semakin sulit.
+              Halo, saya adalah seorang mahasiswa yang mengejar pendidikan yang
+              semakin sulit.
             </p>
           </div>
           <div className="mt-4">
